@@ -7,9 +7,8 @@ Welcome to the UNDP Accelerator Labs Toolkit Micro-site project! This README pro
 - [Introduction](#introduction)
 - [Toolkit Webpage Sample](#toolkit-webpage-sample)
 - [Folder Structure](#folder-structure)
-- [Creating Pages](#creating-pages)
+- [Tutorials](#tutorials)
 - [Customizing Configuration](#customizing-configuration)
-- [Create New Toolkit](#create-new-toolkit)
 - [Set Up the Toolkit Micro-site Locally](#set-up-the-toolkit-micro-site-locally)
 - [License](#license)
 
@@ -44,60 +43,6 @@ content
 ``````
 
 
-## Creating Pages
-
-To organize your content effectively, it's recommended to create a new folder for each topic, with subfiles representing different subtopics under it. Here's an example of how you can structure your pages:
-
-```markdown
-    * Policy making
-        * index.md
-        * values-of-creating-new-policy.md
-        * how-to-create-national-policy.md
-```
-
-
-### Creating a New Topic with sub-topics
-
-1. Create a new folder in the root directory with a meaningful name for your topic. For example, `policy-making`.
-
-2. Inside the new folder, create an `index.md` file. This file will serve as the configuration for the topic in the menu.
-
-3. In the `index.md` file, add Jekyll's front matter to specify the metadata for the topic. Provide the `title` of the topic as it should appear in the menu and the `menu` hierarchy order for its position in the menu tree.
-
-Example `index.md` content:
-
-```markdown
----
-title: Policy making  # This is the title of the topic in the menu list
-menu: 2  # This is the hierarchy of this topic in the menu tree
----
-```
-
-
-### Creating Subtopics
-1. Inside the same topic folder, create additional .md files for each subtopic you want to cover. For example, `values-of-creating-new-policy.md ` and `how-to-create-national-policy.md`.
-Use Jekyll's front matter in each subtopic file to specify metadata such as title, parent, layout, and nav_order.
-Example subtopic content:
-```markdown
----
-title: Values of Creating New Policy
-parent: Policy making
-layout: default
-nav_order: 1
----
-```
-
-
-2. Add your content using Markdown syntax to each subtopic file.
-By following this structure, you can easily organize and create a hierarchy of topics and subtopics in your Toolkit micro-site.
-
-
-### Creating a Main Topic (Without Sub-Topics)
-
-To generate a main topic without any sub-topics, follow these steps. For instance, if you intend to establish a topic named "Contributors" as a menu list item, directing to a contributors page, you can achieve this by creating a file named `Team.md`.
-
-In the created file, it's crucial to set the `has_children` property to `false`. This ensures that topics lacking sub-topics are correctly displayed in the menu list.
-
 ### Customizing the Contributors Page
 
 The current version of this template incorporates both a contributor profile page and a contributors list page. If you wish to integrate these pages into your website, you must update the `_data/contributors.yml` file with a list of your project's contributors.
@@ -106,6 +51,8 @@ To access an individual contributor's profile page, you can link to the respecti
 
 If you decide not to display the contributors page in your side menu, you can exclude it by adding `Team.md` to the `excludes` list in your `_config.yml` file.
 
+## Tutorials
+To familiarize yourself with using the toolkit, from setting up your account to creating folders/files, pages, subtopics, reviewing changes, and publishing them to the live toolkit website, check out the [Tutorials section](./Tutorials/index) for a step-by-step guide.
 
 ## Customizing Configuration
 
@@ -116,24 +63,6 @@ For navigation and menu customization, update the nav.html and sidebar.html part
 
 That's it! You're ready to create, customize, and deploy your Toolkit site. Have fun documenting and sharing your content!
 
-
-## Create a New Toolkit
-
-You can fork this repository to create a copy of it for your use. Follow these steps to create a new toolkit based on the UNDP Accelerator Labs Toolkit Micro-site template:
-
-1. Click on [Create New Toolkit](https://github.com/UNDP-Accelerator-Labs/toolkit-micro-site-template/fork).
-
-2. Provide a name for your new toolkit repository.
-
-3. Choose to include all branches (main and gh-pages) to ensure your micro-site is ready to deploy on GitHub Pages.
-
-4. Click the "Create fork" button to generate your new toolkit repository.
-
-5. Once the repository is created, you are ready to start adding content to your micro-site or you can clone it to your local machine using Git:
-
-   ```markdown
-   git clone https://github.com/your-username/your-new-toolkit.git
-   ```
 
 ## Set Up the Toolkit Micro-site Locally
 
