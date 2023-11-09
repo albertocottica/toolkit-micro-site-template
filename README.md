@@ -52,7 +52,7 @@ To access an individual contributor's profile page, you can link to the respecti
 If you decide not to display the contributors page in your side menu, you can exclude it by adding `Team.md` to the `excludes` list in your `_config.yml` file.
 
 ## Tutorials
-To familiarize yourself with using the toolkit, from setting up your account to creating folders/files, pages, subtopics, reviewing changes, and publishing them to the live toolkit website, check out the [Tutorials section](./Tutorials/index) for a step-by-step guide.
+To familiarize yourself with using the toolkit, from setting up your account to creating folders/files, pages, subtopics, reviewing changes, and publishing them to the live toolkit website, check out the [Tutorials section](./Tutorials/index.md) for a step-by-step guide.
 
 ## Customizing Configuration
 
