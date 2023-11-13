@@ -25,7 +25,7 @@ Learn [how to set up your own toolkit repository](./create-a-toolkit.md) on GitH
 
 Explore the process of [creating branches on GitHub](./create-branch.md) to manage and isolate your toolkit development.
 
-## How to Create a pages, topic and sub-topics for the toolkit on GitHub
+## How to Create a Folder or File on GitHub
 
 Detailed instructions on [creating folders, files, pages, topics and sub-topics](./create-file.md) within your toolkit repository for organized content.
 
