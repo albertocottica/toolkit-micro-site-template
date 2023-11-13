@@ -8,7 +8,7 @@
 ## Creating a File
 1. Navigate to the repository or branch where you want to create a file.
 2. Click on `Add file` and then `Create new file`.
-3. In the `Name your file...` box, type the name of your new file (e.g., `new_file.md`).
+3. In the `Name your file...` box, type the name of your new file (e.g., `new_file.md`). **If you are creating a new page for your toolkit, use the `.md` extension.**
 4. Write your content in the `<>Edit new file` tab.
 5. Scroll down to the bottom of the page, write a commit message, and click `Commit new file`.
 
